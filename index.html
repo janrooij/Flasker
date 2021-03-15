@@ -1,0 +1,24 @@
+<h1>Hello World !</h1>
+<p>Dit is mijn eerste webpagina</p>
+
+<!--variabelen uit hello.py, logica if, for tussen spek en procent, var tussen dubbelspek-->
+
+<p>Mijn naam is {{ first_name }}</p>
+
+<p>Mijn naam is {{ stuff|trim }}</p>
+
+<h3>Favoriete pizza</h3>
+{%for topping in favoriete_pizza %}
+	{% if topping == 40 %}
+		{{topping+100}}</br>
+	{% else %}
+		{{ topping }}<br/>
+	{% endif %}
+
+{% endfor%}
+
+ <br/><br/>
+ {{ favoriete_pizza.4+10 }}
+
+  <br/><br/>
+ {{ favoriete_pizza.2 }}
